@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+env:
+  GH_READ_TOKEN: ${{ secrets.GH_READ_TOKEN }}
+
 jobs:
   build-and-publish-docs:
     runs-on: ubuntu-latest
