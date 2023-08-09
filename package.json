@@ -20,10 +20,6 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@cmi-dair/brainviewer": "^0.0.1",
-        "camera-controls": "^2.7.0",
-        "d3": "^7.8.5",
-        "d3-scale-chromatic": "^3.0.0",
-        "three": "^0.155.0"
+        "@cmi-dair/brainviewer": "^0.0.2"
     }
 }
