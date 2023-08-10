@@ -3,9 +3,9 @@
     SurfaceMesh,
     Surface,
     MeshColors,
-  } from "@cmi-dair/brainviewer/src/brainViewer";
-  import { minMax } from "@cmi-dair/brainviewer/src/utils";
-  import { ViewerClient } from "@cmi-dair/brainviewer/src/viewer";
+  } from "@cmi-dair/brainviewer/lib/brainViewer";
+  import { minMax } from "@cmi-dair/brainviewer/lib/utils";
+  import { ViewerClient } from "@cmi-dair/brainviewer";
   import { spectrogram } from "./spectrogram";
   import { afterUpdate, onMount } from "svelte";
   import brainData from "../assets/brain.json";
@@ -105,8 +105,8 @@
 
     const surface = new Surface(surfaceMesh, colors);
 
-    client = new ViewerClient(elemViewer, surface);
-    client.setModel(surface.mesh, surface.colors);
+    client = new ViewerClient(elemViewer);
+    client.addModel(surface);
     client.setTarget("center");
   });
 </script>
