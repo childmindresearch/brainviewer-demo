@@ -3,11 +3,11 @@
     SurfaceMesh,
     Surface,
     MeshColors,
-  } from "@cmi-dair/brainviewer/lib/brainViewer";
-  import { minMax } from "@cmi-dair/brainviewer/lib/utils";
+    minMax,
+  } from "@cmi-dair/brainviewer";
   import { ViewerClient } from "@cmi-dair/brainviewer";
   import { spectrogram } from "./spectrogram";
-  import { afterUpdate, onMount } from "svelte";
+  import { onMount } from "svelte";
   import brainData from "../assets/brain.json";
   import intensityData from "../assets/intensity.json";
 
