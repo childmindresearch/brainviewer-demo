@@ -20,6 +20,6 @@
         "vite": "^4.4.5"
     },
     "dependencies": {
-        "@cmi-dair/brainviewer": "^0.1.0"
+        "@childmindresearch/brainviewer": "^0.1.0"
     }
 }
