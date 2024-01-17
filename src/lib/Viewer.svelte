@@ -4,8 +4,8 @@
     Surface,
     MeshColors,
     minMax,
-  } from "@cmi-dair/brainviewer";
-  import { ViewerClient } from "@cmi-dair/brainviewer";
+  } from "@childmindresearch/brainviewer";
+  import { ViewerClient } from "@childmindresearch/brainviewer";
   import { spectrogram } from "./spectrogram";
   import { onMount } from "svelte";
   import brainData from "../assets/brain.json";
