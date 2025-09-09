@@ -4,15 +4,15 @@
     Surface,
     MeshColors,
     minMax,
-  } from "@childmindresearch/brainviewer";
-  import { ViewerClient } from "@childmindresearch/brainviewer";
+  } from "@cmi-dair/brainviewer";
+  import { ViewerClient } from "@cmi-dair/brainviewer";
   import { spectrogram } from "./spectrogram";
   import { onMount } from "svelte";
   import brainData from "../assets/brain.json";
   import intensityData from "../assets/intensity.json";
 
-  let elemViewer;
-  let viewer;
+  let elemViewer: HTMLElement;
+  let viewer: any;
 
   let client: ViewerClient | undefined;
 
@@ -111,7 +111,7 @@
   });
 </script>
 
-<div class="brainViewer" bind:this={elemViewer} />
+<div class="brainViewer" bind:this={elemViewer}></div>
 
 <style>
   :global(#app) {
